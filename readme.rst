@@ -104,9 +104,10 @@ Install
 
 .. code-block:: sh
 
-   pip3 install vosk
    git clone https://github.com/ideasman42/nerd-dictation.git
    cd nerd-dictation
+   python3 -m venv .venv
+   .venv/bin/pip install vosk
    wget https://alphacephei.com/kaldi/models/vosk-model-small-en-us-0.15.zip
    unzip vosk-model-small-en-us-0.15.zip
    mv vosk-model-small-en-us-0.15 model
